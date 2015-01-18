@@ -135,6 +135,9 @@ abstract class MarketplaceWebService_Model
      */
     private function escapeXML($str) 
     {
+        if(is_object($str))
+            return;
+        
         $from = array( "&", "<", ">", "'", "\""); 
         $to = array( "&amp;", "&lt;", "&gt;", "&#039;", "&quot;");
         return str_replace($from, $to, $str); 
