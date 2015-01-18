@@ -186,7 +186,7 @@ class MarketplaceWebService_Model_SubmitFeedResponse extends MarketplaceWebServi
     {
         $xml = "";
         $xml .= "<SubmitFeedResponse xmlns=\"http://mws.amazonaws.com/doc/2009-01-01/\">";
-        $xml .= $this->_toXMLFragment();
+        $xml .= $this->toXMLFragment();
         $xml .= "</SubmitFeedResponse>";
         return $xml;
     }
