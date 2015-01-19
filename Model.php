@@ -127,6 +127,11 @@ abstract class MarketplaceWebService_Model
         }
         return $xml;
     }
+    
+    // Add Alias _toXMLFragment
+    protected function _toXMLFragment(){
+        return $this->toXMLFragment();
+    }
 
 
     /**
